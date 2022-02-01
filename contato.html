@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="Description" content="Bem vindo a LP Odontologia">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <title>LP Odontologia</title>
+</head>
+<body onload="mostrarResultado">
+    <header class="cabecalho">
+        <img class="cabecalho-imagem" src="imagens/logo.png" alt="logo da LP Odontologia">
+        <nav class="cabecalho-menu">
+            <a class="cabecalho-menu-item" href="index.html">Home</a>
+            <a class="cabecalho-menu-item">Quem somos</a>
+            <a class="cabecalho-menu-item" href="localizacao.html">Localização</a>
+        </nav>
+    </header>
+    
+    <main class="conteudo-contato">
+        <section class="conteudo-contato-formulario">
+            <h3 class="conteudo-principal-escrito-titulo">Envie sua mensagem</h3>
+            <p class="conteudo-secundario-paragrafo">Entraremos em contato com você!</p>
+            <form class="formulario">
+                <div class="formulario-campo">
+                    <label for="nome">Seu nome:</label>
+                    <input type="text" name="nome" id="nome" required>
+                </div>
+                <div class="formulario-campo-radio">
+                    <label for="sexo" class="formulario-campo-radio-pergunta">Qual seu sexo?</label>
+                    <div class="formulario-campo-radio-resposta">
+                        <div>
+                            <input type="radio" name="sexo" id="masculino" value="Masculino">
+                            <label for="masculino">Masculino</label>
+                        </div>
+                        <div>
+                            <input type="radio" name="sexo" id="feminino" value="Feminino">
+                            <label for="feminino">Feminino</label>
+                        </div>
+                        <div>
+                            <input type="radio" name="sexo" id="outro" value="Outro">
+                            <label for="outro">Outro</label>
+                        </div> 
+                    </div>
+                </div>
+                <div class="formulario-campo">
+                    <label for="email">E-mail:</label>
+                    <input type="email" name="email" id="email" required>
+                </div>
+                <div class="formulario-campo">
+                    <label for="telefone">Telefone:</label>
+                    <input type="tel" name="telefone" id="telefone" required>
+                </div>
+                <div class="formulario-campo">
+                    <label for="idade">Qual a sua Idade?</label>
+                    <input type="number" id="idade" min="0" max="99" required>
+                </div>
+                <div class="formulario-campo-radio">
+                    <label class="formulario-campo-radio-pergunta" for="idade">Qual tratamento você procura?</label>
+                    <div class="formulario-campo-radio-resposta">
+                        <div>
+                            <input type="checkbox" id="tratamento1" name="tratamento1" value="Bichectomia">
+                            <label for="tratamento1">Bichectomia</label>
+                        </div>
+                        <div>
+                            <input type="checkbox" id="tratamento2" name="tratamento2" value="Botox">
+                            <label for="tratamento2">Botox</label>
+                        </div>
+                        <div>
+                            <input type="checkbox" id="tratamento3" name="tratamento3" value="ExtracaoSiso">
+                            <label for="tratamento3">Extração de Siso</label>
+                        </div>
+                        <div>    
+                            <input type="checkbox" id="tratamento4" name="tratamento4" value="Limpeza">
+                            <label for="tratamento4">Limpeza</label>
+                        </div>
+                    </div>
+                    <div class="formulario-campo-radio-resposta">
+                        <div>
+                            <input type="checkbox" id="tratamento5" name="tratamento5" value="Ortodontia">
+                            <label for="tratamento5">Ortodontia</label>
+                        </div>
+                        <div>   
+                            <input type="checkbox" id="tratamento6" name="tratamento6" value="ProtesesImplantes">
+                            <label for="tratamento6">Próteses e Implantes</label>
+                        </div>
+                        <div>
+                            <input type="checkbox" id="tratamento7" name="tratamento7" value="Restauracoes">
+                            <label for="tratamento7">Restaurações</label>
+                        </div>
+                        <div>    
+                            <input type="checkbox" id="tratamento8" name="tratamento8" value="Canal">
+                            <label for="tratamento8">Tratamento de Canal</label>
+                        </div>
+                    </div>
+                </div>
+                <br>
+                <div class="formulario-campo">
+                    <label for="mensagem">Como podemos te ajudar?</label><br>
+                    <textarea row="6" style="width: 100%; height: 6em;" name="mensagem" id="mensagem" required></textarea>
+                </div>
+                <button class="conteudo-principal-escrito-botao" type="submit">Enviar</button>
+            </form>
+        </section>
+        
+        <section class="conteudo-contato-informações">
+            <h3 class="conteudo-principal-escrito-titulo">Telefones:</h3>
+            <p class="conteudo-secundario-paragrafo">(35)  3714-1715 </p>
+            <p class="conteudo-secundario-paragrafo">(35) 99268-7679 </p>
+            <p class="conteudo-secundario-paragrafo">(35) 98826-8971 </p>
+            <h3 class="conteudo-principal-escrito-titulo">E-mail:</h3>
+            <a class="conteudo-principal-escrito-subtitulo" href="mailto:lpodontologiapocos@gmail.com">LPodontologiapocos@gmail.com</p>
+        </section>
+    </main>
+    
+    <footer class="rodape">
+        <img class="rodape-imagem" src="imagens/footer.png" alt="imagem da LP Odontologia">
+    </footer>
+    
+</body>
+</html>

@@ -1,0 +1,230 @@
+@import url('https://fonts.googleapis.com/css2?family=Hurricane&family=Sarala:wght@400;700&display=swap');
+
+/* fonte-família: 'Sarala', sans-serif; */
+/* fonte-família: 'Furacão', cursivo; */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; /*descobrir o que é */
+    text-decoration: none;
+}
+
+body{
+    font-size: 100%;
+    background: linear-gradient(45deg, rgba(255,255,255,1) 0%,rgba(255,255,255,1) 50%, rgba(187,151,127,1) 100%); 
+    background-repeat: no-repeat;
+    /* https://cssgradient.io/ */
+}
+
+.cabecalho{
+    display:flex;         /* https://css-tricks.com/snippets/css/a-guide-to-flexbox/ */
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    padding: 16px;
+}
+
+.cabecalho-imagem{
+    height: 72px;
+    border-radius: 60px;
+}
+
+.cabecalho-menu{
+    display: flex;
+    gap: 50px;
+}
+
+.cabecalho-menu-item{
+    font-family: 'Sarala', sans-serif;
+    color: black;
+    font-weight: 400;
+    font-size: 14px;
+}
+
+.conteudo{
+    border-top: 0.4px solid rgba(187,151,127,1);
+    margin-bottom: 48px;
+}
+
+.conteudo-principal{
+    padding-top: 10px;
+    display:flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.conteudo-principal-escrito{
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.conteudo-principal-escrito-titulo {
+    font-family: 'Hurricane', cursive;
+    font-weight: 400;
+    font-size: 64px;
+    color: rgba(187,151,127,1);
+}
+
+.conteudo-principal-escrito-subtitulo {
+    font-family: 'Sarala', sans-serif;
+    font-weight: 400;
+    font-size: 18px;
+    color: rgba(187,151,127,1);
+}
+
+.conteudo-principal-escrito-botao{
+    background-color: rgba(187,151,127,1);
+    width: 150px;
+    height: 50px;
+    border: none;
+    box-shadow: 4px 5px 4px rgba(0,0,0,0.25);
+    border-radius: 20px;
+    font-family: 'Sarala', sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    color: rgb(255, 255, 255);
+}
+
+.conteudo-principal-escrito-botao:hover {
+    background-color: #bb977fb3;
+}
+
+.conteudo-principal-imagem {
+    height: 260px;
+    border-radius: 20px;
+}
+
+.conteudo-secundario {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    align-items: center;
+    margin-top: 24px;
+}
+
+.conteudo-secundario-titulo {
+    border-top: rgba(187,151,127,1) solid 0.4px;
+    padding-top: 24px;
+    font-family: 'Sarala', sans-serif;
+    font-weight: 700;
+    font-size: 18px;
+    color: rgba(187,151,127,1);
+    margin-bottom: 16px;
+}
+
+.conteudo-secundario-paragrafo {
+    font-family: 'Sarala', sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    color: rgba(187,151,127,1);
+}
+
+.rodape {
+    padding: 20px;
+    border-top: 0.4px solid rgba(187,151,127,1);
+}
+
+.rodape-imagem {
+    height: 56px;
+    display: block;
+    margin: 0 auto;
+}
+
+/*Configuração da página LOCALIZAÇÃO*/
+.conteudo-localizacao {
+    padding-top: 10px;
+    display:flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.conteudo-localizacao-mapa {
+    height: 360px;
+    width: 360px;
+    border-radius: 20px;
+}
+
+.conteudo-localizacao-imagem {
+    height: 360px;
+    border-radius: 20px;
+}
+
+.formulario {
+    padding-top: 30px;
+}
+
+
+.formulario-campo {
+    font-family: 'Sarala', sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    color: rgba(187,151,127,1);
+    margin-top: 10px;
+}
+
+.formulario-campo input[type="text"], input[type="email"], input[type="tel"], input[type="number"]{
+    box-shadow: 2px 2px 2px rgba(0,0,0,0.25);
+    height: 24px;
+    padding: 0px 10px;
+    width: 60%;
+    float: right;
+    margin-right: 10px;
+    font-family: 'Sarala', sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    color: rgba(187,151,127,1);
+}
+
+.formulario-campo textarea {
+    box-shadow: 2px 2px 2px rgba(0,0,0,0.25);
+    height: 72px;
+    padding: 0px 10px;
+    margin: 0 auto;
+    font-family: 'Sarala', sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    color: rgba(187,151,127,1);
+}
+
+.formulario-campo-radio{
+    font-family: 'Sarala', sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    color: rgba(187,151,127,1);
+    margin-top: 10px;
+    display: flex;
+    flex-direction: row;
+    align-items: left;
+    gap: 20px;
+}
+
+.formulario-campo-radio-resposta{
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+}
+
+.conteudo-contato{
+    border-top: 0.4px solid rgba(187,151,127,1);
+    margin-bottom: 48px;
+    padding-top: 10px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+}
+
+input, select, textarea{
+    border-radius: 5px;
+    border: 0.4px solid rgba(187,151,127,1);
+}
+
+.formulario-campo input:focus, .formulario-campo select:focus, .formulario-campo textarea:focus{
+    background: rgba(187,151,127,0.7);
+    color: #FFF;
+}
+
